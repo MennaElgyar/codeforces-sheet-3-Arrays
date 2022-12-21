@@ -1,0 +1,19 @@
+#include <iostream>
+#include<iomanip>
+#include<math.h>
+#include<cmath>
+using namespace std;
+int main(){
+    
+    int N;
+    cin>>N;
+    int arr[N];
+    for(int i =1; i<=N ; i++){
+        cin>>arr[i];
+    }
+    for(int i=N;i>0;i--)
+    {
+       cout<<arr[i] <<" ";
+    }
+   
+}
