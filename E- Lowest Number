@@ -1,0 +1,25 @@
+#include <iostream>
+#include<iomanip>
+#include<math.h>
+#include<cmath>
+using namespace std;
+int main(){
+    
+    int N;
+    cin>>N;
+    int arr[N+1];
+    for(int i =1; i<=N ; i++){
+        cin>>arr[i];
+    }
+   int low = arr[1];
+   int pos = 1;
+    for(int i=1;i<=N;i++)
+    {
+      if(arr[i]<low) {
+          low = arr[i];
+          pos = i;
+      }
+    }
+    cout<<low <<" "<<pos<<endl;
+   
+}
